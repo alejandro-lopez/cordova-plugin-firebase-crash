@@ -24,7 +24,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <preference name="FIREBASE_CRASHLYTICS_COLLECTION_ENABLED" default="true" />
 
-    <platform name="ios">
+    <!--<platform name="ios">
         <hook type="after_plugin_install" src="hooks/ios/after_plugin_install.js" />
         <hook type="before_plugin_uninstall" src="hooks/ios/before_plugin_uninstall.js" />
 
@@ -34,10 +34,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             </feature>
         </config-file>
 
-        <!--
-            use a bit hacky method to set boolean value as a string:
-            https://developer.apple.com/documentation/foundation/nsstring/1409420-boolvalue?preferredLanguage=occ
-        -->
         <config-file target="*-Info.plist" parent="FirebaseCrashlyticsCollectionEnabled">
             <string>$FIREBASE_CRASHLYTICS_COLLECTION_ENABLED</string>
         </config-file>
@@ -53,7 +49,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                 <pod name="Firebase/Crashlytics" spec="~> 6.23.0" />
             </pods>
         </podspec>
-    </platform>
+    </platform>-->
 
     <platform name="android">
         <preference name="FIREBASE_CRASHLYTICS_VERSION" default="17.0.0"/>
