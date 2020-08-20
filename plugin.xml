@@ -16,8 +16,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <engine name="cordova-ios" version=">=5.0.0"/>
     </engines>
 
-    <dependency id="cordova-plugin-firebase-analytics" version="~4.3.0"/>
-
     <js-module src="www/FirebaseCrash.js" name="FirebaseCrash">
         <merges target="cordova.plugins.firebase.crashlytics" />
     </js-module>
@@ -40,7 +38,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <header-file src="src/ios/FirebaseCrashPlugin.h" />
         <source-file src="src/ios/FirebaseCrashPlugin.m" />
-        <pod name="Firebase/Crashlytics"/>   
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
